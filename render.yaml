@@ -1,4 +1,5 @@
- - type: web
+services:
+  - type: web
     name: n8n-climatrack
     runtime: image
     plan: free
