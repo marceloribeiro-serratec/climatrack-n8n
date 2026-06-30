@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: n8n-climatrack
+    name: climatrack-n8n-app
     runtime: image
     plan: free
     image:
@@ -9,14 +9,17 @@ services:
       - key: N8N_PORT
         value: 5678
 
+      - key: PORT
+        value: 5678
+
       - key: N8N_PROTOCOL
         value: https
 
       - key: N8N_HOST
-        value: n8n-climatrack.onrender.com
+        value: climatrack-n8n-app.onrender.com
 
       - key: WEBHOOK_URL
-        value: https://n8n-climatrack.onrender.com/
+        value: https://climatrack-n8n-app.onrender.com/
 
       - key: GENERIC_TIMEZONE
         value: America/Sao_Paulo
